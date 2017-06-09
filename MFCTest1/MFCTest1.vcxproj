@@ -195,6 +195,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BasicInfoDlg.h" />
     <ClInclude Include="Blob.h" />
     <ClInclude Include="MFCTest1.h" />
     <ClInclude Include="MFCTest1Dlg.h" />
@@ -206,6 +207,7 @@
     <ClInclude Include="VehicleDetector.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BasicInfoDlg.cpp" />
     <ClCompile Include="Blob.cpp" />
     <ClCompile Include="MFCTest1.cpp" />
     <ClCompile Include="MFCTest1Dlg.cpp" />
