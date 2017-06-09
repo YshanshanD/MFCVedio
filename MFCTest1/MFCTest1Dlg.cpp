@@ -76,6 +76,7 @@ BEGIN_MESSAGE_MAP(CMFCTest1Dlg, CDialogEx)
 	ON_BN_CLICKED(BTNSTART, &CMFCTest1Dlg::OnBnClickedBtnstart)
 	ON_UPDATE_COMMAND_UI(ID_CAPTION1, &CMFCTest1Dlg::OnUpdateCaption1)
 	ON_UPDATE_COMMAND_UI(ID_CAPTION2, &CMFCTest1Dlg::OnUpdateCaption2)
+	ON_BN_CLICKED(IDC_SPLIT1, &CMFCTest1Dlg::OnBnClickedSplit1)
 END_MESSAGE_MAP()
 
 
@@ -299,4 +300,10 @@ void CMFCTest1Dlg::OnUpdateCaption2(CCmdUI *pCmdUI)
 {
 	choose.SetWindowTextW(L"行人检测");
 	current_func = PEOPLE_DETECT;
+}
+
+
+void CMFCTest1Dlg::OnBnClickedSplit1()
+{
+	// TODO: 在此添加控件通知处理程序代码
 }

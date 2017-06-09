@@ -72,4 +72,5 @@ public:
 	VehicleDetector vehicleDetector;
 
 	PeopleDetector peopleDetector;
+	afx_msg void OnBnClickedSplit1();
 };

@@ -59,6 +59,7 @@ void VehicleDetector::process(VideoCapture &capture, LPVOID params)
 	if (frame_order % 1000 == 0)
 	{
 		pictureBackground = MyTools::getPictureBackground(capture, frame_order);
+		//imshow("±³¾°Í¼", pictureBackground);
 		medianBlur(pictureBackground, pictureBackground, 3);
 		Mat mid_three;
 	}
@@ -68,6 +69,9 @@ void VehicleDetector::process(VideoCapture &capture, LPVOID params)
 	frame.copyTo(frame_mid);
 	
 	cvtColor(frame, frame, COLOR_BGR2GRAY);
+	//imshow("»Ò¶È»¯Í¼",frame);
+	medianBlur(frame,frame,3);
+	//imshow("ÂË²¨Í¼",frame);
 	
 	(frame, frame, 3);
 
