@@ -33,7 +33,7 @@ Mat MyTools::getPictureBackground(VideoCapture& capture, int order)
 		addWeighted(mid, 1, mmid,(float)1/(float)50, 0, mid);
 
 	}
-	imshow("±³¾°Í¼", mmid);
+	//imshow("±³¾°Í¼", mmid);
 	
 	//mmid = mmid / 30;
 	capture.set(CV_CAP_PROP_POS_FRAMES, order);

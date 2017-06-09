@@ -141,7 +141,7 @@ void VehicleDetector::process(VideoCapture &capture, LPVOID params)
 	{
 		line(frame_mid, Point(lines[1], lines[2]), Point(lines[3], lines[4]), Scalar(12, 200, 2), 2);
 	}
-	//if (lines[10] == 1)
+	if (lines[10] == 1)
 	{
 		line(frame_mid, Point(lines[6], lines[7]), Point(lines[8], lines[9]), Scalar(12, 200, 2), 2);
 	}
